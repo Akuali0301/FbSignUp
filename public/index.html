@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type = "image/x-icon" href ="assest/favicon.png">
+    <title>Sign up for Facebook</title>
+    <style>
+        .logo-container img {
+            width: 30%; 
+        }
+         
+        .logo-container {
+            position: absolute;
+            top: -1%;       
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+         
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f2f5;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 110vh;
+        }
+        .container {
+            width: 50vh;
+            background: white;
+            padding: 4vh;
+            border-radius: 1vh;
+            height: 75vh;
+            text-align: center;
+        }
+
+        .title1{
+            position: relative;
+            margin-top: -5vh;
+            font-size: 1.8vh;
+
+        }
+        .title2{
+            position: relative;
+            margin-top: -1.5vh;
+            font-weight: normal;
+            color: #606770;
+            font-family: inherit;
+            font-size: 2vh;
+
+        }
+        
+        .input-field3{
+            width: 98%;
+            padding: 1.5vh;
+            border: 0.1vh solid #ccc;
+            border-radius: 0.8vh;
+            font-size: 2vh;
+            font-family: Helvetica, Arial, sans-serif;
+            display: inline-block;
+            margin-top: 1vh;            
+        }
+        .input-field4{
+            width: 98%;
+            padding: 1.5vh;
+            border: 0.1vh solid #ccc;
+            border-radius: 0.8vh;
+            font-size: 2vh;
+            font-family: Helvetica, Arial, sans-serif;
+            display: inline-block;
+            margin-top: 1vh;          
+        }
+        .input-field{
+            width: 40%;
+            padding: 1.5vh;
+            border: 0.1vh solid #ccc;
+            border-radius: 0.8vh;
+            font-size: 2vh;
+            font-family: Helvetica, Arial, sans-serif;
+            margin-right: 100vh;
+            position: sticky;
+            display: inline-block;
+        }
+        .input-field2{
+            width: 10.5%;
+            padding: 1.5vh;
+            border: 0.1vh solid #ccc;
+            border-radius: 0.8vh;
+            font-size: 2vh;
+            font-family: Helvetica, Arial, sans-serif;
+            position: absolute;
+            margin-top: -5.5vh;
+            display: inline-block;
+        }
+
+        select, button {
+            width: 50%;
+            padding: 1.3vh;
+            margin: 0.5vh 0;
+            border: 0.1vh solid #ccc;
+            border-radius: 0.5vh;
+        }
+        .signup-btn {
+            background: #42b72a;
+            color: white;
+            font-size: 2.5vh;
+            font-weight: bold;
+            cursor: pointer;
+        }
+        .signup-btn:hover {
+            background: #36a420;
+        }
+        .gender-options {
+            display: flex;
+            justify-content: space-between;
+        }
+        .gender-options label {
+            display: flex;
+            align-items: center;
+            gap: 5px;
+        }
+        .footer {
+            font-size: 12px;
+            color: #777;
+            margin-top: 10px;
+        }
+        .smalltext{
+            color: #606770;
+            font-family: SFProText-Medium, Helvetica, Arial, sans-serif;
+            font-size: 12px;
+            font-weight: normal;
+            line-height: 20px;
+            margin-bottom: 2px;
+            margin-top: 10px;
+            margin-left: -166px;
+            direction: ltr;
+            width: 400px;
+            display: block;
+        }
+        
+        .dob-group {
+            display: flex;
+            gap: 10px;
+            justify-content: space-between;
+            margin-bottom: 10px;
+        }
+        .dob-group select {
+            width: 32%;
+            padding: 8px;
+            border: 0.1vh solid #ccc;
+            border-radius: 5px;
+        }
+
+        .gender-group {
+            display: flex;
+            gap: 10px;
+            justify-content: space-between;
+            margin-bottom: 10px;
+            width: 100%;
+        }
+        .gender-option {
+            width: 32%;
+            flex: 1;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px;
+            border: 0.1vh solid #ccc;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .gender-option input {
+            margin-left: 5px;
+        }
+
+        .login-link {
+            margin-top: 10px;
+            color: #385898;
+            font-family: SFProText-Semibold, Helvetica, Arial, sans-serif;
+            font-size: 17px;
+            line-height: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="logo-container">
+        <img src="https://static.xx.fbcdn.net/rsrc.php/y1/r/4lCu2zih0ca.svg" alt="Facebook Logo">
+    </div>
+    <div class="container">
+        <div class="title1">
+            <h1>Create a new account</h1>
+        </div>
+
+        <div class="title2">
+            <p>It's quick and easy.</p>          
+        </div>
+
+        <form>
+            <div>
+                <input class="input-field" type="text" placeholder="First name" required>               
+            </div>
+            <div>
+                <input class="input-field2" type="text" placeholder="Surname" required>
+            </div>
+
+
+
+            <div class="smalltext">Date of birth</div>
+            <div class="dob-group">
+                <select>
+                    <option>1</option>
+                    <option>2</option>
+                    <option>3</option>
+                    <option>4</option>
+                    <option>5</option>
+                    <option>6</option>
+                    <option>7</option>
+                    <option>8</option>
+                    <option>9</option>
+                    <option>10</option>
+                    <option>11</option>
+                    <option>12</option>
+                    <option>13</option>
+                    <option>14</option>
+                    <option>15</option>
+                    <option>16</option>
+                    <option>17</option>
+                    <option>18</option>
+                    <option>19</option>
+                    <option>20</option>
+                    <option>21</option>
+                    <option>22</option>
+                    <option>23</option>
+                    <option>24</option>
+                    <option>25</option>
+                    <option>26</option>
+                    <option>27</option>
+                    <option>28</option>
+                    <option>29</option>
+                    <option>30</option>
+                    <option>31</option>
+                </select>
+                <select>
+                    <option>Jan</option>
+                    <option>Feb</option>
+                    <option>Mar</option>
+                    <option>Apr</option>
+                    <option>May</option>
+                    <option>Jun</option>
+                    <option>Jul</option>
+                    <option>Aug</option>
+                    <option>Sep</option>
+                    <option>Oct</option>
+                    <option>Nov</option>
+                    <option>Dec</option>
+                </select>
+                <select>
+                    <option>2025</option>
+                </select>
+            </div>
+            <div class="smalltext">Gender</div>
+            <div class="gender-options">
+                <div class="gender-group">
+                    <label class="gender-option">
+                        Female
+                        <input type="radio" name="gender" value="female">
+                    </label>
+                    <label class="gender-option">
+                        Male
+                        <input type="radio" name="gender" value="male">
+                    </label>
+                    <label class="gender-option">
+                        Custom
+                        <input type="radio" name="gender" value="custom">
+                    </label>
+                </div>
+            </div>
+            <input class="input-field3" type="email" placeholder="Mobile number or email address" required>
+            
+            <input class="input-field4" type="password" placeholder="New password" required>
+            
+        </form>
+        <div class="footer">
+            <p>People who use our service may have uploaded your contact information to Facebook. <a href="https://www.facebook.com/help/637205020878504">Learn more</a>.</p>
+            <p>By clicking Sign Up, you agree to our <a href="https://www.facebook.com/legal/terms/update">Terms</a>, <a href="https://www.facebook.com/privacy/policy">Privacy Policy</a>, and <a href="https://www.facebook.com/privacy/policies/cookies/">Cookies Policy</a>. You may receive SMS notifications from us and can opt out at any time.</p>
+        </div>
+        <button class="signup-btn" type="submit">Sign Up</button>
+        <p class="login-link"><a href="https://www.facebook.com/">Already have an account?</a></p>
+    </div>
+</body>
+</html>
